@@ -1,0 +1,13 @@
+.textbox{
+    background-image: url("Art/Paper\ Background.avif");
+    position:relative;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(51, 47, 47);
+    font-size: 1.5rem;
+
+    width: fit-content;
+    max-width: 400px;
+    height:auto;
+    padding: 3%;
+    margin: 5%;
+}

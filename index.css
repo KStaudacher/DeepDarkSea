@@ -1,0 +1,32 @@
+
+/*making the body of the index a sandy beach*/
+body{
+    background-image: url('Art/Sand\ Beach\ Background.webp');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#shellContainer{
+  display: flex; /*flex containers control spacing of child elements*/
+  align-items: center;      /*container is vertically centered in screen*/
+  height: 100vh;           /*body of container is full height of screen*/
+  margin: 0; 
+}
+
+.shell{ /*css for all shell image styling*/
+    width: 20vw;
+    height: auto;
+
+    float: left;
+    object-fit: cover;
+    position:fixed; /*doesn't move with scrolling*/
+
+    
+    filter: drop-shadow(0 0 10px transparent);
+    transition: filter 0.3s ease;
+}
+
+.shell:hover{ /*adding a hover effect to the shells*/
+    filter: drop-shadow(0 0 15px #78899b);
+}

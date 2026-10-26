@@ -1,0 +1,99 @@
+/*making style for letter class*/
+.letter {
+    position: relative;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+.letter_container{
+  background-image: url('Art/Paper\ Background.avif');
+  object-fit: cover;
+}
+ 
+
+/*sky style* credit https://www.madrasacademy.com/create-a-dynamic-starry-night-background-with-html-css-and-javascript//*/
+
+.sky {
+    width: 100vw;
+    /*change height from orginal*/
+    height: 300vh;
+    /* Deep galactic background gradient */
+    background: linear-gradient(to bottom, #020107 0%, #201c2f 100%);
+    position: relative;
+    /*prevents sky from spilling over page*/
+    overflow: hidden;
+  }
+  
+  /* Base style for every star generated */
+  .star {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    /* twinkle animation */
+    animation: twinkle var(--duration) infinite ease-in-out;
+    animation-delay: var(--delay);
+  }
+  
+  /* changing opacity */
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.2); }
+  }
+
+  /* light beam*/
+ /*Got from chatgpt :( and then adjusted*/
+
+ .sky::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Start completely off-screen to the left */
+    
+    width: 160%; 
+    height: 100%;
+    
+    /* Fan-shaped beam */
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(180, 220, 255, 0.02) 15%,
+    rgba(180, 220, 255, 0.12) 45%,
+    rgba(220, 240, 255, 0.65) 50%,
+    rgba(180, 220, 255, 0.12) 55%,
+    rgba(180, 220, 255, 0.02) 85%,
+    transparent 100%
+  );
+
+  /* Shape and glow */
+  transform-origin: 0% 50%;
+  transform: translateY(-100%) rotate(-25deg);
+  filter: blur(8px);
+  mix-blend-mode: screen;
+  pointer-events: none;
+
+  animation: lighthouseSweep 3s ease-in-out infinite alternate;
+}
+
+@keyframes lighthouseSweep {
+  from {
+    transform: translateY(-10%) rotate(-35deg);
+  }
+  to {
+    transform: translateY(-10%) rotate(35deg);
+  }
+}
+
+
+  /*ocean css*/
+  .ocean {
+    width: 100vw;
+    /*change height from orginal*/
+    height: 300vh;
+    /* Deep galactic background gradient, reverse colors */
+    background: linear-gradient(to bottom, #201c2f 100%, #000000 0%);
+    position: relative;
+  }
+
+
+
