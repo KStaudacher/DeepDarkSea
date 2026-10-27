@@ -22,7 +22,7 @@
 .sky {
     width: 100%;
     /*change height from orginal*/
-    height: 400vh;
+    height: 500vh;
     /* Deep galactic background gradient */
     background: linear-gradient(to bottom, #020107 0%, #201c2f 100%);
     position: relative;
@@ -97,7 +97,19 @@
     /* Deep galactic background gradient, reverse colors */
     background: linear-gradient(to bottom, #201c2f 100%, #000000 0%);
     position: relative;
+
+    /*
+    mask-image:url(Art/watermask.svg);
+    mask-size: 100% 100%;
+    mask-mode: luminance;*/
   }
+
+  .ocean::after{
+    mask-image:url(Art/watermask.svg);
+    mask-size: 100% 100%;
+    mask-mode: luminance;
+  }
+ 
 
 
 

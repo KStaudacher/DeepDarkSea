@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+
 nav{
     position:fixed;
     width: 100%;
@@ -44,7 +45,6 @@ html, body {
     width: 100%;
     min-height: 100%;
 }
-
 
 
 /*making style for letter class*/

@@ -14,9 +14,13 @@
 // set up text to print, each item in array is new line
 // set up text to print, each item in array is new line
 var aText = new Array(
-    "There are only 10 types of people in the world:", 
-    "Those who understand binary, and those who don't"
-    );
+
+
+    "Meena Irwin", "Cowslip Townage, Federation of Roc", "Day 421, The Year of the Frog"," ", " ", "To my favorite cousin,", " ",
+    "I know you’ve only been gone a month, but it’s lonely here without you. I’m still not entirely sure why you left…it certainly can’t be the weather calling you to the Outposts! It’s almost midway through potting season now. How are you holding up? I’d love to hear from you again.",
+    " ", "Warm wishes from your elder cousin", " ", "Meena"
+
+     );
     var iSpeed = 100; // time delay of print out
     var iIndex = 0; // start printing array at this posision
     var iArrLength = aText[0].length; // the length of the text array
@@ -26,6 +30,7 @@ var aText = new Array(
     var sContents = ''; // initialise contents variable
     var iRow; // initialise current row
      
+    // I'd like to rewrite this function so that destination and aText can be passed as arguments
     function typewriter()
     {
      sContents =  ' ';
