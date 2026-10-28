@@ -15,6 +15,16 @@
   top: 700px;
 }
 
+#lighthousetext{
+  position: sticky;
+  top: 20vh; /* Required: Defines where the element should lock */
+}
+
+.text_holder{
+  position: relative;
+  height: 93%;
+}
+
 
 
 /*sky style* credit https://www.madrasacademy.com/create-a-dynamic-starry-night-background-with-html-css-and-javascript//*/
@@ -27,7 +37,7 @@
     background: linear-gradient(to bottom, #020107 0%, #201c2f 100%);
     position: relative;
     /*prevents sky from spilling over page*/
-    overflow: hidden;
+    overflow: clip;
     
   }
   
@@ -61,15 +71,15 @@
   /*making lighthouse*/
   #light{
     
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
 
     background-color: #fffed5;
     border-radius: 50%;
 
     position: absolute;
-    top: 20%; /* Adjust this to line up with the lantern */
-    left: 50%;
+    top: 15%; 
+    left: 57%;
     left: 50%;
     transform: translateX(-50%);
     
@@ -104,25 +114,27 @@
     /* Deep galactic background gradient, reverse colors */
     background: linear-gradient(to bottom, #201c2f 100%, #000000 0%);
     position: relative;
-
+    margin: 0;
+    margin-top: -10vh;
+    border:0;
     /*
     mask-image:url(Art/watermask.svg);
     mask-size: 100% 100%;
     mask-mode: luminance;*/
   }
-
+/*
   .ocean::after{
     mask-image:url(Art/watermask.svg);
     mask-size: 100% 100%;
     mask-mode: luminance;
-  }
+  }*/
  
   
   #lighthouse{
     position: relative;
     width: 50%;
+    width: 50%;
     height: auto;
-    
 
     z-index: 2;
   }
