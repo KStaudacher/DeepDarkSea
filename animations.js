@@ -159,7 +159,7 @@ for (let i = 0; i < starCount; i++) {
   // Random positioning
   star.style.left = `${Math.random() * 100}vw`;
   //adjusted vh 
-  star.style.top = `${Math.random() * 300}vh`;
+  star.style.top = `${Math.random() * 500}vh`;
   
   // Custom CSS variables for individual animation timing
   star.style.setProperty('--duration', `${Math.random() * 3 + 2}s`);
